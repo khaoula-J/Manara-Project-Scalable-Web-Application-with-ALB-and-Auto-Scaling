@@ -6,6 +6,8 @@ The architecture follows AWS best practices for **security, performance, observa
 <img width="2900" height="1680" alt="Web application achitecture  (1)" src="https://github.com/user-attachments/assets/684b39f3-202f-4db5-bac4-6d1fd7cf083c" />
 
 🖼️ Architecture Overview
+
+
 The application is deployed across a **multi-AZ VPC** to ensure high availability. Internet traffic is routed through **Route 53** and an **Application Load Balancer (ALB)**, which distributes requests to EC2 instances running in private subnets. The backend database (RDS) and caching layer (ElastiCache) are also hosted in private subnets for enhanced security.
 
 Auto Scaling ensures the application can handle variable loads, while CloudWatch and SNS provide monitoring and alerting.
